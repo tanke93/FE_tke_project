@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>手机号码归属地查询案例</title>
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    body input {
+      height: 30px;
+      font-size: 24px;
+    }
+
+    body button {
+      vertical-align: top;
+      font-size: 24px;
+    }
+
+    body table {
+      width: 400px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <input type="text" placeholder="请输入手机号码" id="phoneInput" />
+    <button id="searchBtn">查询</button>
+    <table border="1">
+      <thead>
+        <tr>
+          <th colspan="2">查询结果</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td width="100">手机号码段</td>
+          <td id="phone"></td>
+        </tr>
+        <tr>
+          <td>卡号归属地</td>
+          <td id="addr"></td>
+        </tr>
+        <tr>
+          <td>运营商</td>
+          <td id="company"></td>
+        </tr>
+        <tr>
+          <td>区号</td>
+          <td id="areacode"></td>
+        </tr>
+        <tr>
+          <td>邮编</td>
+          <td id="zip"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
